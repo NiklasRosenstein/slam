@@ -573,11 +573,11 @@ wheels = [
 
 [[package]]
 name = "poetry-core"
-version = "1.9.1"
+version = "2.0.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/c7/5c/3609519b7d890ced542fe327ea26a7c8ea55ef298c323c46cca2a011c1cb/poetry_core-1.9.1.tar.gz", hash = "sha256:7a2d49214bf58b4f17f99d6891d947a9836c9899a67a5069f52d7b67217f61b8", size = 337193 }
+sdist = { url = "https://files.pythonhosted.org/packages/db/ec/dbd9cedc8b68309f1f4c0160355890b4f65f51901b31b1831dbf8c93d6c0/poetry_core-2.0.0.tar.gz", hash = "sha256:3317a3cc3932011a61114236b2d49883f4fb1403d2f5e97771ac0d077cfa396f", size = 353980 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f7/b4/ae500aaba6e003ff80889e3dee449b154d2dd70d520dc0402f23535a5995/poetry_core-1.9.1-py3-none-any.whl", hash = "sha256:6f45dd3598e0de8d9b0367360253d4c5d4d0110c8f5c71120a14f0e0f116c1a0", size = 309472 },
+    { url = "https://files.pythonhosted.org/packages/de/a9/7d3864e1b421676ba7e8a154f12c182eb4c943e9f09b4214d27f2f978ce2/poetry_core-2.0.0-py3-none-any.whl", hash = "sha256:1da7dd9279c5af8ed63f05c87a743dcadbf048dfe78f21c436710829cfff95fe", size = 544118 },
 ]
 
 [[package]]
@@ -873,7 +873,7 @@ wheels = [
 
 [[package]]
 name = "slap-cli"
-version = "1.14.2"
+version = "1.15.0"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -919,7 +919,7 @@ requires-dist = [
     { name = "gitpython", specifier = ">=3.1.31,<4.0.0" },
     { name = "nr-python-environment", specifier = ">=0.1.4,<1.0.0" },
     { name = "nr-stream", specifier = ">=1.1.5,<2.0.0" },
-    { name = "poetry-core", specifier = ">=1.9,<1.10" },
+    { name = "poetry-core", specifier = ">=2,<2.1" },
     { name = "ptyprocess", specifier = ">=0.7.0,<1.0.0" },
     { name = "pygments", specifier = ">=2.11.2,<3.0.0" },
     { name = "pyyaml", specifier = ">=6.0" },
@@ -1024,7 +1024,7 @@ name = "tqdm"
 version = "4.67.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "platform_system == 'Windows'" },
+    { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz", hash = "sha256:f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2", size = 169737 }
 wheels = [
