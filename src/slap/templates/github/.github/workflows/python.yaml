@@ -26,6 +26,6 @@ jobs:
     - uses: NiklasRosenstein/slap@gha/install/v1
     - run: slap install --no-venv-check --only-extras docs
     - run: slap run --no-venv-check docs:build
-    - uses: JamesIves/github-pages-deploy-action@v4.6.1
+    - uses: JamesIves/github-pages-deploy-action@v4.7.2
       if: github.ref == 'refs/heads/develop'
       with: {{ branch: gh-pages, folder: docs/_site, ssh-key: "${{{{ secrets.DEPLOY_KEY }}}}" }}
